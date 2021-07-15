@@ -1,0 +1,230 @@
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --font-family: "Libre Franklin", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-family);
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.logo {
+  margin-top: 10.1875rem;
+  margin-bottom: 4.625rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 2.25rem;
+  margin-bottom: 2.625rem;
+}
+
+h1 span {
+  color: var(--gray);
+}
+
+p {
+  font-size: 1.25rem;
+  margin-bottom: 3.75rem;
+}
+
+form {
+  margin-bottom: 8.625rem;
+}
+
+form button {
+  width: 90%;
+  height: 5.125rem;
+  max-width: 35.125rem;
+  border: none;
+  border-radius: 3.125rem;
+  background-color: var(--blue);
+  font-family: var(--font-family);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+}
+
+input:focus {
+  border: 1px solid var(--light-red);
+  border-radius: 3.125rem;
+  outline: none;
+}
+
+.email__input {
+  padding-left: 0;
+}
+
+.email__input input {
+  width: 90%;
+  max-width: 35.125rem;
+  height: 5.125rem;
+  border: 1px solid var(--pale-blue);
+  border-radius: 3.125rem;
+  padding-left: 4rem;
+  margin-bottom: 1rem;
+  font-family: var(--font-family);
+  font-size: 1.25rem;
+}
+
+.email__input input::-webkit-input-placeholder {
+  color: var(--pale-blue);
+}
+
+.email__input input:-ms-input-placeholder {
+  color: var(--pale-blue);
+}
+
+.email__input input::-ms-input-placeholder {
+  color: var(--pale-blue);
+}
+
+.email__input input::placeholder {
+  color: var(--pale-blue);
+}
+
+#error {
+  height: 1rem;
+  margin-bottom: 2.75rem;
+  color: var(--light-red);
+  font-style: italic;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.dashboard {
+  display: block;
+  width: 100%;
+  max-width: 40.625rem;
+  margin-bottom: 14.375rem;
+}
+
+.share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 3.375rem;
+}
+
+.share ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.share ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 2.8125rem;
+  height: 2.8125rem;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+  color: var(--blue);
+  background-color: white;
+  cursor: pointer;
+}
+
+.share ul li a:hover {
+  background-color: var(--blue);
+  color: white;
+}
+
+footer {
+  margin-bottom: 4.25rem;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    margin-top: 5rem;
+    margin-bottom: 2.875rem;
+  }
+  h1 {
+    margin-bottom: 1.75rem;
+  }
+  p {
+    margin-bottom: 2.625rem;
+  }
+  form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 6rem;
+    margin-bottom: 3.4375rem;
+  }
+  form button {
+    width: 12.375rem;
+    height: 3.6875rem;
+  }
+  .email__input {
+    margin-right: 1.125rem;
+  }
+  .email__input input {
+    width: 26.25rem;
+    height: 3.6875rem;
+    padding-left: 1.875rem;
+  }
+  #error {
+    margin: initial;
+    text-align: left;
+    padding-left: 1.875rem;
+  }
+  .dashboard {
+    margin-bottom: 4.1875rem;
+  }
+  .share {
+    height: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  footer {
+    margin-bottom: 2.875rem;
+  }
+}
